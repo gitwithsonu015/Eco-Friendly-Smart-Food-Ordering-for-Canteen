@@ -1,0 +1,184 @@
+/* Custom styles for Eco-Friendly Canteen App */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.feature-card {
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.menu-item {
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+.menu-card {
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.menu-card .card-text {
+    flex-grow: 1;
+}
+
+.menu-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.token-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+}
+
+.token-number {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-confirmed {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.status-ready {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-completed {
+    background-color: #6c757d;
+    color: white;
+}
+
+.token-status-active {
+    background-color: #28a745;
+    color: white;
+}
+
+.token-status-used {
+    background-color: #6c757d;
+    color: white;
+}
+
+.token-status-expired {
+    background-color: #dc3545;
+    color: white;
+}
+
+.analytics-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #495057;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.waste-high {
+    color: #dc3545;
+}
+
+.waste-medium {
+    color: #ffc107;
+}
+
+.waste-low {
+    color: #28a745;
+}
+
+.toast {
+    z-index: 1060;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    .menu-card .card-title {
+        font-size: 1rem;
+    }
+
+    .token-number {
+        font-size: 1.5rem;
+    }
+}
